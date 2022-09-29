@@ -19,3 +19,63 @@
 h1{
     font-family: DINNextW1G;
 }
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+header > .col{
+    height: 78px;
+    float: left;
+}
+header> .col:first-child{
+    width: 169px;
+    background-color: blueviolet;
+}
+header>.col:nth-child(2){
+    width: calc(100% - 188px - 169px);
+    background-color: aqua;
+}
+header>.col:last-child{
+    width: 188px;
+    background-color: #111;
+    padding-right: 38px;
+    text-align: right;
+    padding-top: 25px;
+}
+header>.col:last-child div{
+    display: inline-block;
+}
+#btn-playnow{
+    padding: 8px 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background;
+    transition-delay: 50ms;
+}
+#btn-playnow:hover{
+    background: rgb(255, 70, 80);
+}
+#icon{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 6.4px;
+    background-color: #111;
+    cursor: pointer;
+}
+#icon>ion-icon{
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    padding-top: 4px;
+}
+#icon:hover{
+    background-color: rgba(128,128,128,0.2);
+}
